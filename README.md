@@ -10,9 +10,8 @@ Fraud Sentinel AI is a local fraud analysis prototype with:
 ## Project Layout
 
 ```text
-backend/      FastAPI app, Pydantic schemas, ML/LLM/batch services
+backend/      FastAPI app, schemas, ML artifact/training code, ML/LLM/batch services
 frontend/     Next.js app and UI components
-model/        Training script and saved model artifact
 *.csv         Local PaySim datasets, ignored by Git
 venv/         Local Python environment, ignored by Git
 ```
@@ -43,7 +42,7 @@ Set `NEXT_PUBLIC_API_BASE_URL` in `frontend/.env.local` if the backend is not ru
 Place `paysim.csv` in the project root, then run:
 
 ```bash
-../venv/Scripts/python model/train_model.py
+../venv/Scripts/python ml/train_model.py
 ```
 
-The training script writes `model/fraud_model.joblib`.
+The training script writes `backend/ml/fraud_model.joblib`.

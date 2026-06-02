@@ -10,7 +10,7 @@ import os
 
 print("Loading dataset...")
 # Load the dataset
-df = pd.read_csv(os.path.join(os.path.dirname(__file__), '../paysim.csv'))
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), '../../paysim.csv'))
 
 print(f"Dataset shape: {df.shape}")
 

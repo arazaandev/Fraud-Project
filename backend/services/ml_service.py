@@ -2,10 +2,10 @@ import joblib
 import pandas as pd
 import os
 import time
-from models.prediction import TransactionRequest
+from schemas.prediction import TransactionRequest
 
 # Load model globally to avoid loading on every request
-MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../model/fraud_model.joblib'))
+MODEL_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../ml/fraud_model.joblib'))
 
 pipeline = None
 

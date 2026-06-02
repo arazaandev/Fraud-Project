@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException, UploadFile, File
 
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-from models.prediction import TransactionRequest, AnalysisResponse
+from schemas.prediction import TransactionRequest, AnalysisResponse
 from services.ml_service import analyze_transaction_risk
 from services.llm_service import generate_analyst_report
 from services.batch_service import process_batch_upload

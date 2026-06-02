@@ -3,7 +3,7 @@ from __future__ import annotations
 from hashlib import sha1
 from typing import Any
 
-from models.prediction import RecommendedAction, TransactionRequest
+from schemas.prediction import RecommendedAction, TransactionRequest
 
 
 PRIORITY_RANK = {"critical": 0, "high": 1, "medium": 2, "low": 3}

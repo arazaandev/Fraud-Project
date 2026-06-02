@@ -1,7 +1,7 @@
 import os
 import json
 import httpx
-from models.prediction import TransactionRequest
+from schemas.prediction import TransactionRequest
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
